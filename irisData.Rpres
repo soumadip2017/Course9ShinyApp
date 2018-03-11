@@ -1,0 +1,62 @@
+iris Data Analysis App 
+========================================================
+
+author: Soumadip Roy
+
+date: 11 March, 2018
+
+
+
+Introduction to iris Dataset
+========================================================
+
+iris is a famous dataset for those who start working on R. We have the following fields in the dataset
+
+```{r echo=FALSE}
+data(iris)
+colnames(iris)
+```
+
+for 3 species 
+
+```{r warning=FALSE, message = FALSE, echo=FALSE}
+unique(iris$Species)
+```
+
+It has 
+
+```{r warning=FALSE, message = FALSE, echo=FALSE}
+nrow(iris)
+```
+
+observations in it
+
+
+
+Introduction to the App 
+========================================================
+
+The user would get an opportunity to see scatter plots showing relationships between the 
+petal and sepal lengths and widths and do a comparative study.
+
+A Sample graph is shown below 
+
+
+```{r warning=FALSE, message = FALSE, echo=FALSE}
+mycolor <-c("red","green3","blue")[as.factor(iris$Species)]
+plot(iris$Sepal.Length, iris$Sepal.Width, col = mycolor
+         )
+```
+
+Options for the user
+========================================================
+
+The user of this app gets the following options to generate graphs and do a comparative study
+
+  - Petal.Length vs. Sepal.Length
+  - Petal.Width vs. Sepal.Width
+  - Petal.Width vs Petal.Length
+  - Sepal.Width vs Sepal.Length
+  
+Thank you !!!
+========================================================  

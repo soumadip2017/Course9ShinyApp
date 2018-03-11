@@ -1,0 +1,35 @@
+---
+title: "Intro to the App"
+#author: "Soumadip Roy"
+#date: "March 11, 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+iris is a famous dataset for those who start working on R. We have the following fields in the dataset
+
+```{r iris , warning=FALSE, message = FALSE, echo=FALSE}
+names(iris)
+```
+
+The dataset has data for sepal and petal attributes for the 3 species 
+
+```{r warning=FALSE, message = FALSE, echo=FALSE}
+unique(iris$Species)
+```
+
+In this shiny app we would try to study the various combinations of the attributes and how they related to each other.
+We have 4 options of the for the graphs
+
+- Petal.Length ~ Sepal.Length
+- Petal.Width ~ Sepal.Width
+- Petal.Width ~ Petal.Length
+- Sepal.Width ~ Sepal.Length
+
+As an user of this app, select the graph options and the corresponding graph would come up.
+
+You also have the option to look into the full dataset and statistical summary of the dataset in the other 2 tables available.
